@@ -27,6 +27,7 @@
 		A3CF3BF219E578B00033441D /* bootstrap in Resources */ = {isa = PBXBuildFile; fileRef = A3CF3BF119E578B00033441D /* bootstrap */; };
 		A3F3171D1B0472CC00DDB3EF /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3F3171C1B0472CC00DDB3EF /* Launch Screen.xib */; };
 		A3F317201B04739F00DDB3EF /* ReadMe.md in Sources */ = {isa = PBXBuildFile; fileRef = A3F3171F1B04739F00DDB3EF /* ReadMe.md */; };
+		A3F317231B0475B100DDB3EF /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F317221B0475B100DDB3EF /* SecondVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		A3CF3BF119E578B00033441D /* bootstrap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bootstrap; sourceTree = "<group>"; };
 		A3F3171C1B0472CC00DDB3EF /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		A3F3171F1B04739F00DDB3EF /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		A3F317211B0475B100DDB3EF /* SecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondVC.h; sourceTree = "<group>"; };
+		A3F317221B0475B100DDB3EF /* SecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				A3CF3BAE19E5776C0033441D /* Main.storyboard */,
 				A3CF3BB119E5776C0033441D /* ViewController.h */,
 				A3CF3BB219E5776C0033441D /* ViewController.m */,
+				A3F317211B0475B100DDB3EF /* SecondVC.h */,
+				A3F317221B0475B100DDB3EF /* SecondVC.m */,
 				A3F3171C1B0472CC00DDB3EF /* Launch Screen.xib */,
 				A37B3F431AC718160077D120 /* add.html */,
 				A37B3F451AC71B240077D120 /* NSString_JavascriptEscape.h */,
@@ -289,6 +294,7 @@
 				A37B3F421AC700BA0077D120 /* RegExCategories.m in Sources */,
 				A3F317201B04739F00DDB3EF /* ReadMe.md in Sources */,
 				A3CF3BAD19E5776C0033441D /* AppDelegate.m in Sources */,
+				A3F317231B0475B100DDB3EF /* SecondVC.m in Sources */,
 				A3CF3BA919E5776C0033441D /* main.m in Sources */,
 				A37B3F471AC71B240077D120 /* NSString_JavascriptEscape.m in Sources */,
 			);

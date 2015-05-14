@@ -1,37 +1,35 @@
 //
-//  ViewController.m
+//  SecondVC.m
 //  BootstrapViewer
 //
-//  Created by Hijazi on 10/8/14.
-//  Copyright (c) 2014 iReka Soft. All rights reserved.
+//  Created by Hijazi on 14/5/15.
+//  Copyright (c) 2015 iReka Soft. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SecondVC.h"
 
-@interface ViewController ()
+@interface SecondVC ()
 
 @end
 
-@implementation ViewController
+@implementation SecondVC
 
-- (BOOL)prefersStatusBarHidden{
-    return NO;
-}
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-
+    
     NSArray *array = @[@[@"asdf",@"asdf",@"ec://asfasdf"],
                        @[@"nbb",@"asdf",@"ec://asdfasdf232"],
                        @[@"sdds",@"asdf",@"ec://ire4"]];
-
+    
     int count = 1;
     NSMutableString *mutString = [[NSMutableString alloc] init];
     for (NSArray *newArray in array) {
         [mutString appendFormat:@"<tr onclick=\"window.document.location='%@'\" ><th>%d</th><td>%@</td><td>%@</td><td></td></tr>",newArray[2],count++, newArray[0], newArray[1]];
-
+        
     }
     
     NSString *item = @"<tr><th>1</th><td>Name</td><td>Otto</td><td>@mdo</td></tr>";
@@ -54,18 +52,18 @@
     self.webView.navigationDelegate = self;
     
     [self.view addSubview:self.webView];
-
     
-//    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"table" ofType:@"html" inDirectory:@"bootstrap"]];
-//    [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
+    
+    //    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"table" ofType:@"html" inDirectory:@"bootstrap"]];
+    //    [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
     
     self.wwwFolderName = @"bootstrap";
-    self.indexFileName = @"index.html";
+    self.indexFileName = @"table.html";
     
     NSString *urlString = [self createFileUrlHelper:[self copyBundleWWWFolderToFolder:[self tmpFolderPath]]];
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
     
-
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -83,26 +81,31 @@
     NSURL *url = navigationAction.request.URL;
     NSString *urlString = (url) ? url.absoluteString : @"";
     
-//    // iTunes: App Store link
-//    if ([urlString isMatch:RX(@"\\/\\/itunes\\.apple\\.com\\/")]) {
+    // iTunes: App Store link
+    if ([urlString isMatch:RX(@"\\/\\/itunes\\.apple\\.com\\/")]) {
+        [[UIApplication sharedApplication] openURL:url];
+        decisionHandler(WKNavigationActionPolicyCancel);
+        return;
+    }
+    // Protocol/URL-Scheme without http(s)
+    else if ([urlString isMatch:[@"^ec:\\/\\/." toRxIgnoreCase:YES]]) {
+
+        UIViewController *vc = [[UIViewController alloc] init];
+        vc.view.backgroundColor = [UIColor whiteColor];
+        [self.navigationController pushViewController:vc animated:YES];
+        
 //        [[UIApplication sharedApplication] openURL:url];
 //        decisionHandler(WKNavigationActionPolicyCancel);
 //        return;
-//    }
-//    // Protocol/URL-Scheme without http(s)
-//    else if (![urlString isMatch:[@"^https?:\\/\\/." toRxIgnoreCase:YES]]) {
-//        [[UIApplication sharedApplication] openURL:url];
-//        decisionHandler(WKNavigationActionPolicyCancel);
-//        return;
-//    }
+    }
     decisionHandler(WKNavigationActionPolicyAllow);
-
+    
     //
-//    
-//    UIViewController *vc = [[UIViewController alloc] init];
-//    vc.view.backgroundColor = [UIColor whiteColor];
-//    [self.navigationController pushViewController:vc animated:YES];
-
+    //
+    //    UIViewController *vc = [[UIViewController alloc] init];
+    //    vc.view.backgroundColor = [UIColor whiteColor];
+    //    [self.navigationController pushViewController:vc animated:YES];
+    
     
 }
 #pragma mark - helper
@@ -214,4 +217,5 @@
         return NO;
     }
 }
+
 @end
