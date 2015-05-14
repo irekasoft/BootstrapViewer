@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A37B3F421AC700BA0077D120 /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = A37B3F411AC700BA0077D120 /* RegExCategories.m */; };
+		A37B3F441AC718160077D120 /* add.html in Resources */ = {isa = PBXBuildFile; fileRef = A37B3F431AC718160077D120 /* add.html */; };
+		A37B3F471AC71B240077D120 /* NSString_JavascriptEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = A37B3F461AC71B240077D120 /* NSString_JavascriptEscape.m */; };
 		A3CF3B9D19E5776C0033441D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CF3B9C19E5776C0033441D /* Foundation.framework */; };
 		A3CF3B9F19E5776C0033441D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CF3B9E19E5776C0033441D /* CoreGraphics.framework */; };
 		A3CF3BA119E5776C0033441D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CF3BA019E5776C0033441D /* UIKit.framework */; };
@@ -21,6 +24,9 @@
 		A3CF3BBE19E5776C0033441D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CF3BA019E5776C0033441D /* UIKit.framework */; };
 		A3CF3BC619E5776C0033441D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3CF3BC419E5776C0033441D /* InfoPlist.strings */; };
 		A3CF3BC819E5776C0033441D /* BootstrapViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CF3BC719E5776C0033441D /* BootstrapViewerTests.m */; };
+		A3CF3BF219E578B00033441D /* bootstrap in Resources */ = {isa = PBXBuildFile; fileRef = A3CF3BF119E578B00033441D /* bootstrap */; };
+		A3F3171D1B0472CC00DDB3EF /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3F3171C1B0472CC00DDB3EF /* Launch Screen.xib */; };
+		A3F317201B04739F00DDB3EF /* ReadMe.md in Sources */ = {isa = PBXBuildFile; fileRef = A3F3171F1B04739F00DDB3EF /* ReadMe.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A37B3F401AC700BA0077D120 /* RegExCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
+		A37B3F411AC700BA0077D120 /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
+		A37B3F431AC718160077D120 /* add.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = add.html; sourceTree = "<group>"; };
+		A37B3F451AC71B240077D120 /* NSString_JavascriptEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_JavascriptEscape.h; sourceTree = "<group>"; };
+		A37B3F461AC71B240077D120 /* NSString_JavascriptEscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_JavascriptEscape.m; sourceTree = "<group>"; };
 		A3CF3B9919E5776C0033441D /* BootstrapViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootstrapViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CF3B9C19E5776C0033441D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A3CF3B9E19E5776C0033441D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +64,9 @@
 		A3CF3BC319E5776C0033441D /* BootstrapViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BootstrapViewerTests-Info.plist"; sourceTree = "<group>"; };
 		A3CF3BC519E5776C0033441D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A3CF3BC719E5776C0033441D /* BootstrapViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BootstrapViewerTests.m; sourceTree = "<group>"; };
+		A3CF3BF119E578B00033441D /* bootstrap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bootstrap; sourceTree = "<group>"; };
+		A3F3171C1B0472CC00DDB3EF /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		A3F3171F1B04739F00DDB3EF /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +96,8 @@
 		A3CF3B9019E5776C0033441D = {
 			isa = PBXGroup;
 			children = (
+				A3F3171F1B04739F00DDB3EF /* ReadMe.md */,
+				A3F3171E1B04738700DDB3EF /* Lib */,
 				A3CF3BA219E5776C0033441D /* BootstrapViewer */,
 				A3CF3BC119E5776C0033441D /* BootstrapViewerTests */,
 				A3CF3B9B19E5776C0033441D /* Frameworks */,
@@ -112,11 +128,16 @@
 		A3CF3BA219E5776C0033441D /* BootstrapViewer */ = {
 			isa = PBXGroup;
 			children = (
+				A3CF3BF119E578B00033441D /* bootstrap */,
 				A3CF3BAB19E5776C0033441D /* AppDelegate.h */,
 				A3CF3BAC19E5776C0033441D /* AppDelegate.m */,
 				A3CF3BAE19E5776C0033441D /* Main.storyboard */,
 				A3CF3BB119E5776C0033441D /* ViewController.h */,
 				A3CF3BB219E5776C0033441D /* ViewController.m */,
+				A3F3171C1B0472CC00DDB3EF /* Launch Screen.xib */,
+				A37B3F431AC718160077D120 /* add.html */,
+				A37B3F451AC71B240077D120 /* NSString_JavascriptEscape.h */,
+				A37B3F461AC71B240077D120 /* NSString_JavascriptEscape.m */,
 				A3CF3BB419E5776C0033441D /* Images.xcassets */,
 				A3CF3BA319E5776C0033441D /* Supporting Files */,
 			);
@@ -150,6 +171,15 @@
 				A3CF3BC419E5776C0033441D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3F3171E1B04738700DDB3EF /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				A37B3F401AC700BA0077D120 /* RegExCategories.h */,
+				A37B3F411AC700BA0077D120 /* RegExCategories.m */,
+			);
+			name = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +229,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "iReka Soft";
 				TargetAttributes = {
+					A3CF3B9819E5776C0033441D = {
+						DevelopmentTeam = 23A6EJTDXW;
+					};
 					A3CF3BB919E5776C0033441D = {
 						TestTargetID = A3CF3B9819E5776C0033441D;
 					};
@@ -230,7 +263,10 @@
 			files = (
 				A3CF3BB519E5776C0033441D /* Images.xcassets in Resources */,
 				A3CF3BA719E5776C0033441D /* InfoPlist.strings in Resources */,
+				A37B3F441AC718160077D120 /* add.html in Resources */,
 				A3CF3BB019E5776C0033441D /* Main.storyboard in Resources */,
+				A3CF3BF219E578B00033441D /* bootstrap in Resources */,
+				A3F3171D1B0472CC00DDB3EF /* Launch Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3CF3BB319E5776C0033441D /* ViewController.m in Sources */,
+				A37B3F421AC700BA0077D120 /* RegExCategories.m in Sources */,
+				A3F317201B04739F00DDB3EF /* ReadMe.md in Sources */,
 				A3CF3BAD19E5776C0033441D /* AppDelegate.m in Sources */,
 				A3CF3BA919E5776C0033441D /* main.m in Sources */,
+				A37B3F471AC71B240077D120 /* NSString_JavascriptEscape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,9 +415,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BootstrapViewer/BootstrapViewer-Prefix.pch";
 				INFOPLIST_FILE = "BootstrapViewer/BootstrapViewer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -389,9 +430,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BootstrapViewer/BootstrapViewer-Prefix.pch";
 				INFOPLIST_FILE = "BootstrapViewer/BootstrapViewer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,6 +499,7 @@
 				A3CF3BCD19E5776C0033441D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3CF3BCE19E5776C0033441D /* Build configuration list for PBXNativeTarget "BootstrapViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +508,7 @@
 				A3CF3BD019E5776C0033441D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
