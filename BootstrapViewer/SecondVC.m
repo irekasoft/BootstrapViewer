@@ -21,9 +21,9 @@
     [super viewDidLoad];
     
     
-    NSArray *array = @[@[@"asdf",@"asdf",@"ec://asfasdf"],
-                       @[@"nbb",@"asdf",@"ec://asdfasdf232"],
-                       @[@"sdds",@"asdf",@"ec://ire4"]];
+    NSArray *array = @[@[@"Apple",@"Hardware",@"ec://asfasdf"],
+                       @[@"Google",@"Data",@"ec://asdfasdf232"],
+                       @[@"Microsoft",@"Software",@"ec://ire4"]];
     
     int count = 1;
     NSMutableString *mutString = [[NSMutableString alloc] init];
@@ -32,7 +32,7 @@
         
     }
     
-    NSString *item = @"<tr><th>1</th><td>Name</td><td>Otto</td><td>@mdo</td></tr>";
+    NSString *item = @"<tr><th>1</th><td>Company</td><td>Otto</td><td>Powerful</td></tr>";
     
     NSLog(@"log %@",mutString);
     
