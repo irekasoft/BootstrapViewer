@@ -16,26 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSArray *array = @[@[@"Apple",@"Hardware",@"ec://asfasdf"],
-                       @[@"Google",@"Data",@"ec://asdfasdf232"],
-                       @[@"Microsoft",@"Software",@"ec://ire4"]];
     
-    int count = 1;
-    NSMutableString *mutString = [[NSMutableString alloc] init];
-    for (NSArray *newArray in array) {
-        [mutString appendFormat:@"<tr onclick=\"window.document.location='%@'\" ><th>%d</th><td>%@</td><td>%@</td><td></td></tr>",newArray[2],count++, newArray[0], newArray[1]];
-        
-    }
-    
-    NSString *item = @"<tr><th>1</th><td>Company</td><td>Otto</td><td>Powerful</td></tr>";
-    
-    NSLog(@"log %@",mutString);
-    
-    NSString *newString = [mutString addBackslashes:mutString];
+    [self.navigationController.navigationBar setTranslucent:NO];
+
+    [self.navigationController.navigationBar setShadowImage:[UIImage imageNamed:@"TransparentPixel"]];
+    // "Pixel" is a solid white 1x1 image.
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"Pixel"] forBarMetrics:UIBarMetricsDefault];
+
     
     
     // user scripts
-    NSString *myScriptSource = [NSString stringWithFormat:@"document.getElementById('insert').innerHTML = '%@';", newString];
+    NSString *myScriptSource = [NSString stringWithFormat:@"document.getElementById('insert').innerHTML = '';"];
     
     WKUserScript *myUserScript = [[WKUserScript alloc] initWithSource:myScriptSource injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
     
@@ -46,7 +37,9 @@
     _webView = [[WKWebView alloc] initWithFrame:self.view.frame configuration:configuration];
     self.webView.navigationDelegate = self;
     
-    [self.view addSubview:self.webView];
+//    [self.view addSubview:self.webView];
+    
+    [self.view insertSubview:self.webView atIndex:0];
     
     
     //    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"table" ofType:@"html" inDirectory:@"bootstrap"]];
@@ -79,23 +72,15 @@
         return;
     }
     // Protocol/URL-Scheme without http(s)
-    else if ([urlString isMatch:[@"^ec:\\/\\/." toRxIgnoreCase:YES]]) {
+    else if ([urlString isMatch:[@"^sound:\\/\\/." toRxIgnoreCase:YES]]) {
         
         UIViewController *vc = [[UIViewController alloc] init];
         vc.view.backgroundColor = [UIColor whiteColor];
         [self.navigationController pushViewController:vc animated:YES];
-        
-        //        [[UIApplication sharedApplication] openURL:url];
-        //        decisionHandler(WKNavigationActionPolicyCancel);
-        //        return;
+    
     }
     decisionHandler(WKNavigationActionPolicyAllow);
     
-    //
-    //
-    //    UIViewController *vc = [[UIViewController alloc] init];
-    //    vc.view.backgroundColor = [UIColor whiteColor];
-    //    [self.navigationController pushViewController:vc animated:YES];
     
     
 }

@@ -11,6 +11,7 @@
 		A37B3F441AC718160077D120 /* add.html in Resources */ = {isa = PBXBuildFile; fileRef = A37B3F431AC718160077D120 /* add.html */; };
 		A37B3F471AC71B240077D120 /* NSString_JavascriptEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = A37B3F461AC71B240077D120 /* NSString_JavascriptEscape.m */; };
 		A3A688481B07D9E10068ADF4 /* ThirdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A688471B07D9E10068ADF4 /* ThirdVC.m */; };
+		A3A6884B1B07E1FF0068ADF4 /* ExtendedNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6884A1B07E1FF0068ADF4 /* ExtendedNavBarView.m */; };
 		A3CF3B9D19E5776C0033441D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CF3B9C19E5776C0033441D /* Foundation.framework */; };
 		A3CF3B9F19E5776C0033441D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CF3B9E19E5776C0033441D /* CoreGraphics.framework */; };
 		A3CF3BA119E5776C0033441D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CF3BA019E5776C0033441D /* UIKit.framework */; };
@@ -45,10 +46,12 @@
 		A37B3F401AC700BA0077D120 /* RegExCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
 		A37B3F411AC700BA0077D120 /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
 		A37B3F431AC718160077D120 /* add.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = add.html; sourceTree = "<group>"; };
-		A37B3F451AC71B240077D120 /* NSString_JavascriptEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_JavascriptEscape.h; sourceTree = "<group>"; };
-		A37B3F461AC71B240077D120 /* NSString_JavascriptEscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_JavascriptEscape.m; sourceTree = "<group>"; };
+		A37B3F451AC71B240077D120 /* NSString_JavascriptEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSString_JavascriptEscape.h; path = BootstrapViewer/NSString_JavascriptEscape.h; sourceTree = "<group>"; };
+		A37B3F461AC71B240077D120 /* NSString_JavascriptEscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSString_JavascriptEscape.m; path = BootstrapViewer/NSString_JavascriptEscape.m; sourceTree = "<group>"; };
 		A3A688461B07D9E10068ADF4 /* ThirdVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdVC.h; sourceTree = "<group>"; };
 		A3A688471B07D9E10068ADF4 /* ThirdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdVC.m; sourceTree = "<group>"; };
+		A3A688491B07E1FF0068ADF4 /* ExtendedNavBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendedNavBarView.h; sourceTree = "<group>"; };
+		A3A6884A1B07E1FF0068ADF4 /* ExtendedNavBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendedNavBarView.m; sourceTree = "<group>"; };
 		A3CF3B9919E5776C0033441D /* BootstrapViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootstrapViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CF3B9C19E5776C0033441D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A3CF3B9E19E5776C0033441D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -144,10 +147,10 @@
 				A3F317221B0475B100DDB3EF /* SecondVC.m */,
 				A3A688461B07D9E10068ADF4 /* ThirdVC.h */,
 				A3A688471B07D9E10068ADF4 /* ThirdVC.m */,
+				A3A688491B07E1FF0068ADF4 /* ExtendedNavBarView.h */,
+				A3A6884A1B07E1FF0068ADF4 /* ExtendedNavBarView.m */,
 				A3F3171C1B0472CC00DDB3EF /* Launch Screen.xib */,
 				A37B3F431AC718160077D120 /* add.html */,
-				A37B3F451AC71B240077D120 /* NSString_JavascriptEscape.h */,
-				A37B3F461AC71B240077D120 /* NSString_JavascriptEscape.m */,
 				A3CF3BB419E5776C0033441D /* Images.xcassets */,
 				A3CF3BA319E5776C0033441D /* Supporting Files */,
 			);
@@ -188,6 +191,8 @@
 			children = (
 				A37B3F401AC700BA0077D120 /* RegExCategories.h */,
 				A37B3F411AC700BA0077D120 /* RegExCategories.m */,
+				A37B3F451AC71B240077D120 /* NSString_JavascriptEscape.h */,
+				A37B3F461AC71B240077D120 /* NSString_JavascriptEscape.m */,
 			);
 			name = Lib;
 			sourceTree = "<group>";
@@ -296,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A688481B07D9E10068ADF4 /* ThirdVC.m in Sources */,
+				A3A6884B1B07E1FF0068ADF4 /* ExtendedNavBarView.m in Sources */,
 				A3CF3BB319E5776C0033441D /* ViewController.m in Sources */,
 				A37B3F421AC700BA0077D120 /* RegExCategories.m in Sources */,
 				A3F317201B04739F00DDB3EF /* ReadMe.md in Sources */,

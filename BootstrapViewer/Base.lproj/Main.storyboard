@@ -111,7 +111,31 @@
                     <view key="view" contentMode="scaleToFill" id="QCA-RC-kFG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QX1-fl-tSW" customClass="ExtendedNavBarView">
+                                <rect key="frame" x="0.0" y="64" width="320" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This label appears as part of the navigation bar." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="183" translatesAutoresizingMaskIntoConstraints="NO" id="1ZD-xJ-kKP">
+                                        <rect key="frame" x="69" y="11" width="183" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Cdc-aC-nFK"/>
+                                    <constraint firstAttribute="centerX" secondItem="1ZD-xJ-kKP" secondAttribute="centerX" id="XKM-Ma-plV"/>
+                                    <constraint firstAttribute="centerY" secondItem="1ZD-xJ-kKP" secondAttribute="centerY" id="kHe-Rz-iDO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="sAb-ZD-25q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QX1-fl-tSW" firstAttribute="top" secondItem="MXb-G7-buH" secondAttribute="bottom" id="1pk-Vv-ale"/>
+                            <constraint firstItem="QX1-fl-tSW" firstAttribute="leading" secondItem="QCA-RC-kFG" secondAttribute="leading" id="E7Q-Ga-stL"/>
+                            <constraint firstAttribute="trailing" secondItem="QX1-fl-tSW" secondAttribute="trailing" id="PuC-WS-PcI"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Rgg-VW-yEX"/>
                 </viewController>
