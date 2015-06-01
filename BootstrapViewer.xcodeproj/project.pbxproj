@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A37B3F421AC700BA0077D120 /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = A37B3F411AC700BA0077D120 /* RegExCategories.m */; };
 		A37B3F441AC718160077D120 /* add.html in Resources */ = {isa = PBXBuildFile; fileRef = A37B3F431AC718160077D120 /* add.html */; };
-		A37B3F471AC71B240077D120 /* NSString_JavascriptEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = A37B3F461AC71B240077D120 /* NSString_JavascriptEscape.m */; };
+		A38CF4CF1B1C3E2700E83D8C /* NSString_JavascriptEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = A38CF4CC1B1C3E2700E83D8C /* NSString_JavascriptEscape.m */; };
+		A38CF4D01B1C3E2700E83D8C /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = A38CF4CE1B1C3E2700E83D8C /* RegExCategories.m */; };
 		A3A688481B07D9E10068ADF4 /* ThirdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A688471B07D9E10068ADF4 /* ThirdVC.m */; };
 		A3A6884B1B07E1FF0068ADF4 /* ExtendedNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6884A1B07E1FF0068ADF4 /* ExtendedNavBarView.m */; };
 		A3CF3B9D19E5776C0033441D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CF3B9C19E5776C0033441D /* Foundation.framework */; };
@@ -43,11 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A37B3F401AC700BA0077D120 /* RegExCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
-		A37B3F411AC700BA0077D120 /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
 		A37B3F431AC718160077D120 /* add.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = add.html; sourceTree = "<group>"; };
-		A37B3F451AC71B240077D120 /* NSString_JavascriptEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSString_JavascriptEscape.h; path = BootstrapViewer/NSString_JavascriptEscape.h; sourceTree = "<group>"; };
-		A37B3F461AC71B240077D120 /* NSString_JavascriptEscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSString_JavascriptEscape.m; path = BootstrapViewer/NSString_JavascriptEscape.m; sourceTree = "<group>"; };
+		A38CF4CB1B1C3E2700E83D8C /* NSString_JavascriptEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_JavascriptEscape.h; sourceTree = "<group>"; };
+		A38CF4CC1B1C3E2700E83D8C /* NSString_JavascriptEscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_JavascriptEscape.m; sourceTree = "<group>"; };
+		A38CF4CD1B1C3E2700E83D8C /* RegExCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
+		A38CF4CE1B1C3E2700E83D8C /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
 		A3A688461B07D9E10068ADF4 /* ThirdVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdVC.h; sourceTree = "<group>"; };
 		A3A688471B07D9E10068ADF4 /* ThirdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdVC.m; sourceTree = "<group>"; };
 		A3A688491B07E1FF0068ADF4 /* ExtendedNavBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendedNavBarView.h; sourceTree = "<group>"; };
@@ -102,11 +102,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A38CF4CA1B1C3E2700E83D8C /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				A38CF4CB1B1C3E2700E83D8C /* NSString_JavascriptEscape.h */,
+				A38CF4CC1B1C3E2700E83D8C /* NSString_JavascriptEscape.m */,
+				A38CF4CD1B1C3E2700E83D8C /* RegExCategories.h */,
+				A38CF4CE1B1C3E2700E83D8C /* RegExCategories.m */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
 		A3CF3B9019E5776C0033441D = {
 			isa = PBXGroup;
 			children = (
 				A3F3171F1B04739F00DDB3EF /* ReadMe.md */,
-				A3F3171E1B04738700DDB3EF /* Lib */,
+				A38CF4CA1B1C3E2700E83D8C /* Libs */,
 				A3CF3BA219E5776C0033441D /* BootstrapViewer */,
 				A3CF3BC119E5776C0033441D /* BootstrapViewerTests */,
 				A3CF3B9B19E5776C0033441D /* Frameworks */,
@@ -184,17 +195,6 @@
 				A3CF3BC419E5776C0033441D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A3F3171E1B04738700DDB3EF /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				A37B3F401AC700BA0077D120 /* RegExCategories.h */,
-				A37B3F411AC700BA0077D120 /* RegExCategories.m */,
-				A37B3F451AC71B240077D120 /* NSString_JavascriptEscape.h */,
-				A37B3F461AC71B240077D120 /* NSString_JavascriptEscape.m */,
-			);
-			name = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,14 +301,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A688481B07D9E10068ADF4 /* ThirdVC.m in Sources */,
+				A38CF4D01B1C3E2700E83D8C /* RegExCategories.m in Sources */,
 				A3A6884B1B07E1FF0068ADF4 /* ExtendedNavBarView.m in Sources */,
 				A3CF3BB319E5776C0033441D /* ViewController.m in Sources */,
-				A37B3F421AC700BA0077D120 /* RegExCategories.m in Sources */,
 				A3F317201B04739F00DDB3EF /* ReadMe.md in Sources */,
 				A3CF3BAD19E5776C0033441D /* AppDelegate.m in Sources */,
+				A38CF4CF1B1C3E2700E83D8C /* NSString_JavascriptEscape.m in Sources */,
 				A3F317231B0475B100DDB3EF /* SecondVC.m in Sources */,
 				A3CF3BA919E5776C0033441D /* main.m in Sources */,
-				A37B3F471AC71B240077D120 /* NSString_JavascriptEscape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
