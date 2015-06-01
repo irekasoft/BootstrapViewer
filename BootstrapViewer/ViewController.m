@@ -64,7 +64,11 @@
 //    [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
     
     self.wwwFolderName = @"bootstrap";
-    self.indexFileName = @"index.html";
+    
+    if (self.indexFileName==nil) {
+        self.indexFileName = @"index.html";
+    }
+
     
     NSString *urlString = [self createFileUrlHelper:[self copyBundleWWWFolderToFolder:[self tmpFolderPath]]];
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
@@ -111,15 +115,36 @@
 //        decisionHandler(WKNavigationActionPolicyCancel);
 //        return;
 //    }
-    decisionHandler(WKNavigationActionPolicyAllow);
 
     //
 //    
 //    UIViewController *vc = [[UIViewController alloc] init];
 //    vc.view.backgroundColor = [UIColor whiteColor];
 //    [self.navigationController pushViewController:vc animated:YES];
-
     
+    NSArray *parts = [navigationAction.request.URL.absoluteString componentsSeparatedByString:@"/"];
+    NSString *filename = [parts lastObject];
+
+    if (navigationAction.navigationType > -1) {
+        
+        
+        NSLog(@"url %@",navigationAction.request.URL);
+        NSURL *url = navigationAction.request.URL;
+        NSString *urlString = (url) ? url.absoluteString : @"";
+        
+        ViewController *browserVC = [self.storyboard instantiateViewControllerWithIdentifier:@"ViewController"];
+        browserVC.indexFileName = filename;
+        
+        
+        [self.navigationController pushViewController:browserVC animated:YES];
+        
+        decisionHandler(WKNavigationActionPolicyCancel);
+    }else{
+        
+        
+        decisionHandler(WKNavigationActionPolicyAllow);
+        
+    }
 }
 #pragma mark - helper
 
