@@ -1,0 +1,27 @@
+/* Space out content a bit */
+html{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+}
+
+body {
+
+
+
+}
+tr {
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.arabic {
+    
+    font-family: 'Scheherazade', serif;
+    line-height: 2.0;
+}
